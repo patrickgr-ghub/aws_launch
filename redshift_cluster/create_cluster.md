@@ -1,14 +1,14 @@
 ## Create Redshift Cluster through IaC (Infrastructure as Code)
 ###### Version 1.0 - November 2020
 
-#### Getting Started - What is IaC?
+#### 1.0 Getting Started - What is IaC?
 
-#### Files needed to Launch
+#### 2.0 Files needed to Launch
 
-#### Details of Code within Files
+#### 3.0 Details of Code within Files
 
-###### `DWH.cfg` - Configuration File
+###### 3.1 `DWH.cfg` - Configuration File
 
-###### `Create_cluster.py` - Launch Cluster File
+###### 3.2 `Create_cluster.py` - Launch Cluster File
 
-#### Executing the Files
+#### 4.0 Executing the Files
