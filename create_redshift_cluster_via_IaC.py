@@ -33,13 +33,6 @@ LOG_DATA = config.get("S3","LOG_DATA")
 LOG_JSONPATH = config.get("S3","LOG_JSONPATH")
 
 
-
-pd.DataFrame({"Param":
-                  ["DWH_CLUSTER_TYPE", "DWH_NUM_NODES", "DWH_NODE_TYPE", "DWH_CLUSTER_IDENTIFIER", "DWH_IAM_ROLE_NAME", "DWH_ENDPOINT", "DWH_ROLE_ARN", "SONG_DATA", "LOG_DATA", "LOG_JSONPATH", "DB_NAME", "DB_USER", "DB_PASSWORD", "DB_PORT"],
-              "Value":
-                  [DWH_CLUSTER_TYPE, DWH_NUM_NODES, DWH_NODE_TYPE, DWH_CLUSTER_IDENTIFIER, DWH_IAM_ROLE_NAME, DWH_ENDPOINT, DWH_ROLE_ARN, SONG_DATA, LOG_DATA, LOG_JSONPATH, DB_NAME, DB_USER, DB_PASSWORD, DB_PORT]
-             })
-
 # Create the needed AWS Clients
 
 ec2 = boto3.resource('ec2',
