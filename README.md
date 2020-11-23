@@ -8,7 +8,7 @@
 
 Last Updated: December 2020
 
-###Includes:
+Includes:
 
 <p>The following articles are found within this repository</p>
 
