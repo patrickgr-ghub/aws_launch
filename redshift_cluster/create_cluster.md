@@ -1,5 +1,5 @@
 ## Create Redshift Cluster through IaC (Infrastructure as Code)
-Version 1.0 - November 2020
+###### Version 1.0 - November 2020
 
 #### Getting Started - What is IaC?
 
