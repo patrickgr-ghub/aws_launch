@@ -44,6 +44,7 @@ from time import time
 
 <p>This section will setup variables for use within the IaC commands using the "configparser" library. </p>
 
+```
 config = configparser.ConfigParser()
 config.read_file(open('dwh.cfg'))
 
@@ -68,10 +69,11 @@ DWH_ROLE_ARN = config.get("IAM_ROLE","DWH_ROLE_ARN")
 SONG_DATA = config.get("S3","SONG_DATA")
 LOG_DATA = config.get("S3","LOG_DATA")
 LOG_JSONPATH = config.get("S3","LOG_JSONPATH")
+```
 
+###### -- Create the needed AWS Clients --
 
-# Create the needed AWS Clients
-
+```
 ec2 = boto3.resource('ec2',
                  region_name="us-west-2",
                  aws_access_key_id=KEY,
@@ -95,10 +97,11 @@ redshift = boto3.client('redshift',
                  aws_access_key_id=KEY,
                  aws_secret_access_key=SECRET
                  )
-
+```
     
-# Create the IAM Role to have Redshift Access the S3 Bucket (ReadOnly)
+###### -- Create the IAM Role to have Redshift Access the S3 Bucket (ReadOnly) --
 
+```
 def create_role(DWH_IAM_ROLE_NAME):
     try:
         print("1.1 Creating a new IAM Role") 
@@ -114,28 +117,31 @@ def create_role(DWH_IAM_ROLE_NAME):
             )    
     except Exception as e:
         print(e)
-
+```
     
-# Attach Policy
+###### -- Attach Policy --
 
+```
 def attach_policy(DWH_IAM_ROLE_NAME):
     print("1.2 Attaching Policy")
     iam.attach_role_policy(RoleName=DWH_IAM_ROLE_NAME,
                    PolicyArn="arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
                   )['ResponseMetadata']['HTTPStatusCode']
+```
 
+###### -- Get & Print the IAM Role ARN --
 
-# Get & Print the IAM Role ARN
-
+```
 def get_role(DWH_IAM_ROLE_NAME):
     print("1.3 Get the IAM role ARN")
     roleArn = iam.get_role(RoleName=DWH_IAM_ROLE_NAME)['Role']['Arn']
     print(roleArn)
     return roleArn
+```
 
+###### -- Create the Redshift Cluster --
 
-# Create the Redshift Cluster
-
+```
 def create_cluster(DWH_CLUSTER_TYPE, DWH_NODE_TYPE, DWH_NUM_NODES, DB_NAME, DWH_CLUSTER_IDENTIFIER, DB_USER, DB_PASSWORD, roleArn):
 
     try:
@@ -157,10 +163,11 @@ def create_cluster(DWH_CLUSTER_TYPE, DWH_NODE_TYPE, DWH_NUM_NODES, DB_NAME, DWH_
 
     except Exception as e:
         print(e)
+```
 
+###### -- Run "connection.py" functions to create role, attach policy, set roleArn, and create the cluster --
 
-# Run "connection.py" functions to create role, attach policy, set roleArn, and create the cluster.        
-        
+```        
 def main():
     
     create_role(DWH_IAM_ROLE_NAME)
@@ -171,5 +178,6 @@ def main():
     
 if __name__ == "__main__":
     main()
+```
 
 #### 4.0 Executing the Files
