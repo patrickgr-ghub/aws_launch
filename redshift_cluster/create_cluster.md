@@ -31,12 +31,14 @@
 
 <p>This section will import external libraries that are referenced within the code to execute commands from existing code base.</p>
 
+```
 import pandas as pd
 import boto3
 import json
 import configparser
 from pprint import pprint
 from time import time
+```
 
 ###### -- Load all config parameters from the config file "dwh.cfg" --
 
