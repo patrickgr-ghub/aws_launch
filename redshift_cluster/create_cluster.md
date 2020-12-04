@@ -108,7 +108,9 @@ redshift = boto3.client('redshift',
                  aws_secret_access_key=SECRET
                  )
 ```
-    
+
+<p>For more on Boto3 Resources, take a look at the following link: (https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html)</p>
+
 ###### -- Create the IAM Role to have Redshift Access the S3 Bucket (ReadOnly) --
 
 ```
