@@ -7,3 +7,10 @@
 
 #### Adding appropriate services to EMR Cluster to Support Jupyter Notebooks
 
+#### Launching the Jupyter Notebook
+
+#### Saving Your Work
+
+#### Shutting Down Services to Prevent Charges
+
+#### Data Management Considerations for Testing Projects
