@@ -10,7 +10,7 @@
 <p>Now that we have the technical definition out of the way, in short: IaC allows people to spin up, pause, and delete machines to process a targeted set of operations without having to use the command line interface (CLI). This allows data engineers to save time, increase consistency, and even bid out use of elastic infrastructure... utimately saving money.</p>
 
 #### 2.0 Files needed to Launch
-
+ 
 ###### 2.1 `dwh.cfg`
 
 <p> The "dwh.cfg` file holds configurations information for setting up the cluster. Largely made up of credentials and settings, this file holds information that is used across systems and files to authenticate and direct the flow of information. More details can be found in the "Details of Code within Files" section.</p>
