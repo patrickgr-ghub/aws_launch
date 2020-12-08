@@ -2,6 +2,7 @@
 
 <p>For those that are newer to Cloud Database Management, the concept of SSH may be unfamiliar. This document reviews the purpose and application of the basic concepts of SSH Authentication.</p>
 
+
 #### What is SSH?
 
 <p>As defined on Wikipedia:
@@ -12,6 +13,7 @@ SSH provides a secure channel over an unsecured network by using a client–serv
 </p>
 
 [Click here to access the full Wikipedia Overview](https://en.wikipedia.org/wiki/SSH_(Secure_Shell))
+
 
 #### SSH in simple terms
 
@@ -45,11 +47,11 @@ To create a key pair, you need to log into AWS and follow these steps:
 
 7. The private key file is automatically downloaded by your browser. The base file name is the name you specified as the name of your key pair, and the file name extension is determined by the file format you chose. Save the private key file in a safe place.
 
-> **!! Important: This is the only chance for you to save the private key file. !!**
+> <span style="color:red"> **!! Important: This is the only chance for you to save the private key file. !!**</span>
 
 8. If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.
 
-> **chmod 400 my-key-pair.pem**
+> <span style="color:red"> **chmod 400 my-key-pair.pem** </span>
 
 If you do not set these permissions, then you cannot connect to your instance using this key pair. For more information, see Error: Unprotected private key file.
 
