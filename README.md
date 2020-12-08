@@ -12,7 +12,7 @@ Includes:
 
 <p>The following articles are found within this repository</p>
 
-1. How to launch a Redshift Cluster using IaC (Infrastructure as Code)
-2. SSH and authentication to EMR Clusters
-3. Leveraging IaC to Launch an EMR Cluster
-4. Quick Launch of Jupyter Notebook Clusters through Console
+1. How to launch a Redshift Cluster using Infrastructure as Code "IaC" (Updated)
+2. SSH and authentication to EMR Clusters (In Progress)
+3. Leveraging IaC to Launch an EMR Cluster (Coming Soon)
+4. Quick Launch of Jupyter Notebook Clusters through Console (Coming Soon)
