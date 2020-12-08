@@ -193,3 +193,5 @@ if __name__ == "__main__":
 ```
 
 #### 4.0 Executing the Files
+
+<p>To execute the files, you will need terminal access to AWS. Users will want to establish a secure connection to an appropriate Redshift Cluster through SSH, then leverage the a python terminal to launch the files from within a shared directory.</p>
