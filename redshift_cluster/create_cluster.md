@@ -1,6 +1,8 @@
 ## Create Redshift Cluster through IaC (Infrastructure as Code)
 ###### Version 1.0 - November 2020
 
+> **Please note that this repository is only meant to serve as an introduction, helping beginers to acquaint themselves with concepts and ideas. Security of your instances and projects is of utmost importantance - please reference to the official AWS documentation before finalizing personal projects.**
+
 #### 1.0 Getting Started - What is IaC?
 
 <p>Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. The IT infrastructure managed by this process comprises both physical equipment, such as bare-metal servers, as well as virtual machines, and associated configuration resources. The definitions may be in a version control system. It can use either scripts or declarative definitions, rather than manual processes, but the term is more often used to promote declarative approaches. (Wikipedia: https://en.wikipedia.org/wiki/Infrastructure_as_code).</p>
