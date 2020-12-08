@@ -49,17 +49,19 @@ To create a key pair, you need to log into AWS and follow these steps:
 7. The private key file is automatically downloaded by your browser. The base file name is the name you specified as the name of your key pair, and the file name extension is determined by the file format you chose. Save the private key file in a safe place.
 
 ```diff
-- Important: This is the only chance for you to save the private key file.
+Important: This is the only chance for you to save the private key file.
 ```
 
 8. If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.
 
 ```diff
-+ chmod 400 my-key-pair.pem
+chmod 400 my-key-pair.pem
 ```
 
 If you do not set these permissions, then you cannot connect to your instance using this key pair. For more information, see Error: Unprotected private key file.
 </p>
+
+[Click Here For the Full AWS Key Pair Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
 
 #### Connecting to an instance through SSH
