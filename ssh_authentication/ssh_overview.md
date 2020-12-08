@@ -25,6 +25,7 @@ AWS describes it this way: "After you launch your instance, you can connect to i
 
 <p>It is often necessary to interface with database instances leveraging the terminal to load files, test scripts, update servers, and perform many other actions. SSH makes it possible to establish a secure connection to systems so that users can make requests from their local machine or from other machines outside of the core network.</p>
 
+
 #### Establishing up your SSH Credentials
 
 <p>Prior to using SSH, there are a couple of key steps that need to be taken to establish a secure identity that will be used to make calls to your remote machines. The first and most important is establishing a key pair:
@@ -46,21 +47,20 @@ To create a key pair, you need to log into AWS and follow these steps:
 6. Choose Create key pair.
 
 7. The private key file is automatically downloaded by your browser. The base file name is the name you specified as the name of your key pair, and the file name extension is determined by the file format you chose. Save the private key file in a safe place.
-</p>
+
 
 <span style="background-color:red"> **!! Important: This is the only chance for you to save the private key file. !!**</span>
 
-<p>
+
 8. If you will use an SSH client on a macOS or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.
-</p>
+
 
 <span style="background-color:red"> **chmod 400 my-key-pair.pem** </span>
 
-<p>
+
 If you do not set these permissions, then you cannot connect to your instance using this key pair. For more information, see Error: Unprotected private key file.
 </p>
 
-</p>
 
 #### Connecting to an instance through SSH
 
