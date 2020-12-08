@@ -58,7 +58,7 @@ To create a key pair, you need to log into AWS and follow these steps:
      chmod 400 my-key-pair.pem
 ~~~
 
-If you do not set these permissions, then you cannot connect to your instance using this key pair. For more information, see Error: Unprotected private key file.
+9. If you do not set these permissions, then you cannot connect to your instance using this key pair. For more information, see Error: Unprotected private key file.
 </p>
 
 [Click Here For the Full AWS Key Pair Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
@@ -66,13 +66,9 @@ If you do not set these permissions, then you cannot connect to your instance us
 
 #### Connecting to an instance through SSH
 
+<p>Once you have established your key pair, you can save the .pem file to a secure location on your machine. You will need to note the file name.</p>
+
 #### Uploading files to an instance from terminal
 
 
-
-
-
-
-
-
-This file will sample some of the concepts of ssh and how to authenticate to servers using terminal.
+(This file is still being published.)
