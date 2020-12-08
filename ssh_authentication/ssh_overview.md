@@ -11,7 +11,11 @@ SSH or Secure Shell is a cryptographic network protocol for operating network se
 SSH provides a secure channel over an unsecured network by using a client–server architecture, connecting an SSH client application with an SSH server. The protocol specification distinguishes between two major versions, referred to as SSH-1 and SSH-2. The standard TCP port for SSH is 22. SSH is generally used to access Unix-like operating systems, but it can also be used on Microsoft Windows. Windows 10 uses OpenSSH as its default SSH client and SSH server.
 </p>
 
-#### Setting up your SSH Credentials
+[Click here to access the full Wikipedia Overview](https://en.wikipedia.org/wiki/SSH_(Secure_Shell))
+
+#### Establishing up your SSH Credentials
+
+
 
 
 
